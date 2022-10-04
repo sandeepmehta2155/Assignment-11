@@ -237,6 +237,11 @@ Array without duplicate elements = [ 1, 2, 3, 4, 5 ]
 // Output
 
 const newArray = [];
+/**
+ * 
+ * @param {*} arr 
+ * @returns duplicates & storeDuplicates array
+ */
 const duplicateElements = (arr = []) => {
   const duplicates = arr.reduce((acc, item) => {
     if (acc.indexOf(item) === -1) {
